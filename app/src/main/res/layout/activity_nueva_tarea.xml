@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.DetalleActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_admin"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/myToolBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_nueva_tarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="218dp"
+            android:padding="20dp"
+            android:text="Nueva tarea"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/titulo_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="12dp"
+        android:hint="Titulo"
+        android:inputType="textCapCharacters"
+        android:textColor="@color/color_admin"
+        android:textSize="34sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:hint="Description"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/color_admin"
+        android:textSize="18sp"
+        android:id="@+id/desc_new"
+        android:inputType="textCapCharacters"
+        android:background="#fdf1f1"/>
+
+
+    <EditText
+        android:id="@+id/fecha_new"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="-50dp"
+        android:inputType="date"
+        android:text="00/00/0000"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+    <Button
+        android:id="@+id/button_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="120dp"
+        android:text="Guardar" />
+
+
+
+
+
+</LinearLayout>

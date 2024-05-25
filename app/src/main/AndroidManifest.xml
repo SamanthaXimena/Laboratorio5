@@ -28,6 +28,10 @@
         <activity
         android:name=".Activity.DetalleActivity"
         android:exported="false" />
+        <activity
+            android:name=".Activity.NuevaTareaActivity"
+            android:exported="false" />
+
     </application>
 
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />

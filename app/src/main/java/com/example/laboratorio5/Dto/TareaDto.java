@@ -5,6 +5,12 @@ public class TareaDto {
     private String titulo;
     private String fecha;
 
+
+
+    public TareaDto() {
+
+    }
+
     public String getDesc() {
         return desc;
     }
